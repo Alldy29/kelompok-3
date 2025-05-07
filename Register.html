@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[url(/img/Background.jpg)] bg-cover flex items-center justify-center min-h-screen">
+    <div class="bg-true-gray-300 p-8 rounded-lg shadow-md w-100">
+    <div> 
+        <h1 class="text-3xl text-center mt-5 mb-5 text-white">Welcome To Web</h1>
+        <img src="img/Astronout.png" alt="Logo" class="rounded-xl mb-10 items-center justify-between">
+    </div>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-white">Full Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 text-white border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Enter Full Name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-white">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 text-white border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Enter email">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-white">Enter Password</label>
+                <input type="password" id="password" name="password" required class="mt-1 block w-full p-2 text-white border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Enter Password">
+            </div>
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-sm font-medium text-white">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="mt-1 block w-full p-2 text-white border border-white rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"><a href="Login.html">Sign up</a></button>
+        </form>
+        <p class="mt-4 text-center text-sm text-white">don't Have an Account? <a href="#" class="text-blue-500 hover:underline">sign in</a></p>
+    </div>
+
+</body>
+</html>
