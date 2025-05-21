@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Crispy</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-5 py-4 bg-amber-700 shadow-amber-500">
+      <div class="text-2xl font-bold text-yellow-700">
+        <a href="#" class="text-black">Banana <span class="text-yellow-500">Pisang
+        <span class="text-yellow-300">Crispy</span></a>
+      </div>
+      <ul class="hidden md:flex space-x-6 text-sm font-medium">
+        <li><a href="#home" class="hover:text-yellow-300 text-white">Beranda</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 text-white">Tentang Kami</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 text-white">Menu</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 text-white">Kontak</a></li>
+      </ul>
+      <div class="flex space-x-3"> 
+        <a href="#" id="search"><i  class="w-5 h-5 hover:text-yellow-300"></i></a>
+        <a href="#" id="shopping-cart"><i  class="w-5 h-5 hover:text-yellow-300"></i></a>
+        <a href="#" id="banana-menu" class="md:hidden"><i data-feather="menu" class="w-5 h-5"></i></a>
+      </div> 
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class=" bg-true-gray-300 rounded-lg shadow-md w-100 relative bg-cover bg-center bg-[url(/img/BG_1.png)] justify-center pb-50 py-40">
+      <div class="pb-60">
+        <div class="max-w-2xl mx-auto text-center text-white px-4">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section 
+    <section id="about" class="py-20
+    .0 bg-white text-center">
+      <h2 class="text-3xl font-semibold"><span class="text-yellow-600">Beranda</span></h2>
+      <div class="flex justify-between">
+        <div class="w-full flex justify-center items-center">
+          <img src="/img/Astronout.png" style="width: 35%" /></div>
+        <div class="w-full flex justify-center items-center">
+          <img src="/img/Astronout2.png" style="width: 35%" /></div>
+        <div class="w-full flex justify-center items-center">
+          <img src="/img/" style="width: 35%" /></div>
+        <div class="w-full flex justify-center items-center">
+          <img src="/img/" style="width: 35%" /></div>
+        <div class="w-full flex justify-center items-center">
+          <img src="/img/" style="width: 35%" /></div>
+      </div>
+    </section>-->
+    
+    
+    <section id="tentang Kami" id="scrolldiv" class="py-20 pt-32
+    .0 bg-white text-center bg-true-gray-300 rounded-lg shadow-lg w-100" >
+    <span class="font-serif text-3xl text-yellow-500">Produk Best Saller</span>
+    <div class="cursor-pointer flex  overflow-x-auto whitespace-nowrap px-5 scrollbar-hide scroll-smooth">
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/Panda.png" style="width: 80%" />
+          </div>
+    </div>
+      </section>
+
+      <div class="flex items-center justify-center p-5 ">
+          <div class="w-full h-[500px] flex ">
+            <img src="/img/Panda.png" style="width: 40%" />
+          </div>
+      </div>
+
+    <!-- Feather Icons Init -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+  <script>
+  const scrolldiv = document.getElementById ('scrolldiv');
+
+  scrolldiv.addEventListener('wheel', (evt) => {
+    const isScrollingHorizontally = Math.abs(evt.deltaX) > Math.abs(evt.deltaY);
+    
+    if (isScrollingHorizontally || evt.shiftKey) {
+      evt.preventDefault();
+      scrolldiv.scrollBy({
+        left: evt.deltaX * 50, // ⬅️ Tambah kecepatan scroll horizontal
+        behavior: 'smooth'
+      });
+    }
+  }, { passive: false });
+</script>
+
+  </body>
+</html>
