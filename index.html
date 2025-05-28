@@ -8,6 +8,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!--Flowbite Cdn CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
      <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
@@ -18,26 +20,23 @@
   <body class="font-sans text-gray-800">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center px-5 py-4 bg-amber-700 shadow-amber-500">
-      <div class="text-2xl font-bold text-yellow-700">
-        <a href="#" class="text-black">Banana <span class="text-yellow-500">
-        <span class="text-yellow-300">Crispy</span></a>
+   <header
+    class="flex fixed top-0 left-0 right-0 w-full h-20 bg-yellow-700 items-center pl-[30px] shadow z-40">
+    <div class="w-[500px] text-black hidden md:block">    
+      <div class="flex font-semibold ">
+        <h1 class="text-yellow-500">BananaNa</h1>
+        <h1 class="text-yellow-500">Pisang</h1>
+        <h1 class="text-yellow-500">Crispy</h1>
       </div>
-      <ul class="hidden md:flex space-x-6 text-sm font-medium">
-        <li><a href="#home" class="hover:text-yellow-300 text-white">Beranda</a></li>
-        <li><a href="#about" class="hover:text-yellow-300 text-white">Tentang Kami</a></li>
-        <li><a href="#menu" class="hover:text-yellow-300 text-white">Menu</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300 text-white">Kontak</a></li>
-      </ul>
-      <div class="flex space-x-3"> 
-        <a href="#" id="search"><i  class="w-5 h-5 hover:text-yellow-300"></i></a>
-        <a href="#" id="shopping-cart"><i  class="w-5 h-5 hover:text-yellow-300"></i></a>
-        <a href="#" id="banana-menu" class="md:hidden"><i data-feather="menu" class="w-5 h-5"></i></a>
-      </div> 
-    </nav>
+      <p>Hallo, Selamat Berbelanja</p>
+    </div>
+
+    
+    
+  </header>
 
     <!-- Hero Section with Background Image -->
-    <section id="home" class=" bg-true-gray-300 rounded-lg shadow-md w-100 relative bg-cover bg-center bg-[url(/img/BG_1.png)] justify-center pb-50 py-40">
+    <section id="home" class=" bg-true-gray-300 rounded-lg shadow-md w-100 bg-cover bg-center bg-[url(/img/BG_1.png)] justify-center pb-50 py-40">
       <div class="pb-40">
         <div class="max-w-2xl mx-auto text-center text-white px-4">
         </div>
@@ -48,14 +47,14 @@
     <section id="tentang Kami" id="scrolldiv" class="py-10 pb-10
      text-center bg-true-gray-300 rounded-lg mt-[50px]  border shadow shadow-blue-900 w-100" >
     <section class=""><span class="font-serif text-3xl text-yellow-500">Produk Best Saller</span></section>
-    <div class="cursor-pointer flex overflow-x-auto whitespace-nowrap px-5 scrollbar-hide scroll-smooth">
+    <div class="cursor-pointer flex overflow-x-auto h-[500] whitespace-nowrap px-5 scrollbar-hide scroll-smooth">
           <div class="w-full h-[200px] justify-center items-center">
             <img src="/img/Panda.png" />
             <span class="text-center">Pisang Keju</span>
           </div>
           <div class="w-full h-[200px] justify-center items-center">
             <img src="/img/Panda.png" />
-            <span class="text-center">Pisang Keju</span>
+            <span class="text-center">Pisang Keju </span>
           </div>
           <div class="w-full h-[200px] justify-center items-center">
             <img src="/img/Panda.png"/>
@@ -74,6 +73,7 @@
             <span class="text-center">Pisang Keju</span>
           </div>
     </div>
+    <div><a href="#" class="text-yellow-300 text-white">Masuk </a></div>
       </section>
 
       <div class="flex items-center p-5 ">
@@ -98,9 +98,11 @@
       </div>
 
       <div class=""></div>
-      
-
+     
+     
     <!-- Feather Icons Init -->
+     <!-- {{-- Flowbite Cdn JS --}} -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script>
       feather.replace();
     </script>
