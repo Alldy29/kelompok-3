@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maps Banana Crispy-Edit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+ <body 
+
+    class="relative bg-cover bg-center min-h-screen"
+    style="background-image: url('/img/bg bnn.jpg')">
+
+    
+  </div>
+
+    <div class="flex flex-col items-center min-h-screen py-8 px-4 space-y-6">
+      <!-- Kontainer Utama -->
+      <div class="mt-20 bg-white p-10 rounded-2xl shadow-xl w-full max-w-xl">
+        <form action="#" method="post">
+          <!-- Judul -->
+          <div class="text-center mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800">
+              Banana Crispy Location
+            </h2>
+            <div class="mt-2 w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
+          </div>
+
+          <!-- Kontainer Map -->
+          <div class="rounded-xl overflow-hidden shadow-md mb-6">
+            <label class="block text-lg font-medium text-gray-700"
+              >Lokasi Kami</label
+            >
+            <div
+              class="mt-2 w-full h-[500px] border-4 border-blue-500 rounded-xl overflow-hidden"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4706.045650528197!2d108.19751450981465!3d-7.320506747552082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f572c5a8557fb%3A0x3e72866522bfece5!2sPoliteknik%20LP3I%20Kampus%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1747810266790!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full"
+                title="Lokasi Banana Crispy di Tasikmalaya"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Teks Penjelasan -->
+          <p class="text-center text-gray-700 max-w-2xl mx-auto mb-4">
+            Lokasi Banana Crispy berada di dekat Politeknik LP3I Kampus
+            Tasikmalaya. Anda bisa mengunjungi kami langsung di lokasi atau
+            menghubungi kami melalui media sosial di bawah.
+          </p>
+
+          <!-- Ikon Sosial Media -->
+          <div class="mt-4 flex justify-center gap-10">
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                class="w-10 h-10"
+              />
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/Banana_Crispy"
+              target="_blank"
+              aria-label="Instagram"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+                class="w-10 h-10 rounded-lg"
+              />
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="https://www.tiktok.com/@your_username"
+              target="_blank"
+              aria-label="TikTok"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://cdn.simpleicons.org/tiktok/000000"
+                alt="TikTok"
+                class="w-10 h-10"
+              />
+            </a>
+          </div>
+
+          <!-- Garis panjang -->
+          <div class="w-full h-[3px] bg-gray-300 my-6"></div>
+
+          <!-- Form Kritik dan Saran -->
+          <div class="bg-white p-6 rounded-2xl shadow-xl w-full">
+            <div class="font-semibold text-xl mb-4">
+              Criticism and Suggestions Form
+            </div>
+            <textarea
+              name="kritik_saran"
+              rows="4"
+              placeholder="Tulis kritik atau saran Anda di sini..."
+              class="w-full p-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+            <button
+              type="submit"
+              class="mt-4 w-full bg-blue-500 text-white py-2 rounded-xl hover:bg-blue-600 transition duration-300"
+            >
+              Kirim
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
