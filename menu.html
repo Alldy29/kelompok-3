@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Crispy</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+  <!-- Navbar -->
+    <nav
+  id="navbar"
+  class="flex justify-between items-center px-5 py-4 bg-black shadow-md sticky top-0 z-50 transition-transform duration-300"
+>
+
+      <div class="text-3xl font-bold tracking-tight text-white font-playfair">
+        <a
+          href="index.html"
+          class="hover:text-yellow-300 transition-colors duration-300"
+        >
+          Banana <span class="text-yellow-300">Crispy</span>
+        </a>
+      </div>
+      <ul class="hidden md:flex space-x-6 text-white font-semibold">
+        <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
+        <li>
+          <a href="tentangkami.html" class="hover:text-yellow-300">Tentang</a>
+        </li>
+        <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+        <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero / Banner -->
+    <section
+      class="text-center py-16 px-4 bg-gradient-to-b from-yellow-200 to-yellow-100"
+    >
+      <h1 class="text-4xl font-bold mb-4 text-amber-800">
+        Selamat Datang di Banana Crispy
+      </h1>
+      <p class="text-lg text-gray-700">
+        Nikmati kelezatan pisang krispi dengan berbagai topping menarik!
+      </p>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="menu" class="px-5 py-10 bg-yellow-100">
+      <h2 class="text-2xl font-bold text-center text-yellow-700 mb-6">
+        Menu Kami
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Produk 1 -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="/img/pisang susu.jpg"
+            alt="Banana Original"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Original</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Pisang goreng krispi dengan topping keju dan coklat.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Original"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Banana Coklat"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Coklat</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Kombinasi rasa pisang dan lelehan coklat yang nikmat.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Banana Keju"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Keju</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Lezatnya keju meleleh di atas pisang krispi hangat.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Keju"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Produk 4: Banana Matcha -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Banana Matcha"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Matcha</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Sensasi unik perpaduan pisang krispi dan bubuk matcha.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Matcha"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Produk 5: Banana Coklat Oreo -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Banana Coklat Oreo"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Coklat Oreo</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Lelehan coklat dan taburan Oreo yang menggoda selera.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat%20Oreo"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+
+        <!-- Produk 6: (tambahan opsional jika ingin 6 rasa) -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+        >
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Banana Tiramisu"
+            class="rounded-lg mb-3"
+          />
+          <h3 class="text-xl font-semibold mb-1">Banana Tiramisu</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Paduan manis pisang dengan cita rasa kopi tiramisu.
+          </p>
+          <a
+            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Tiramisu"
+            target="_blank"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
+          >
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-10 mt-20 relative">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-2xl font-playfair font-bold mb-2">
+            Banana <span class="text-yellow-300">Crispy</span>
+          </h2>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Camilan pisang renyah kekinian dengan topping melimpah dan rasa
+            tiada duanya.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Navigasi</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="index.html" class="hover:text-yellow-300">Beranda</a>
+            </li>
+            <li>
+              <a href="tentangkami.html" class="hover:text-yellow-300"
+                >Tentang Kami</a
+              >
+            </li>
+            <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+            <li>
+              <a href="kontak.html" class="hover:text-yellow-300">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Lokasi Toko</h3>
+          <div class="w-full h-32 rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.297761142335!2d108.19611007411291!3d-7.320411671983636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f572c5a8557fb%3A0x3e72866522bfece5!2sPoliteknik%20LP3I%20Kampus%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1749718594436!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="instagram"></i
+            ></a>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M232,64a72.1,72.1,0,0,1-48-18.4V144a72,72,0,1,1-72-72,8,8,0,0,1,0,16,56,56,0,1,0,56,56V24a8,8,0,0,1,8-8h16a8,8,0,0,1,8,8,56.1,56.1,0,0,0,56,56,8,8,0,0,1,0,16Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="message-circle"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="max-w-4xl mx-auto mt-12 px-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Berlangganan Newsletter</h3>
+        <p class="text-sm text-gray-400 mb-4">
+          Dapatkan info promo dan menu terbaru!
+        </p>
+        <form
+          class="flex flex-col sm:flex-row items-center justify-center gap-3"
+        >
+          <input
+            type="email"
+            placeholder="Email Anda"
+            class="px-4 py-2 w-full sm:w-80 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <button
+            type="submit"
+            class="bg-yellow-300 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-400 transition"
+          >
+            Kirim
+          </button>
+        </form>
+      </div>
+
+      <!-- Copyright & Scroll -->
+      <div
+        class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 Banana Crispy. All rights reserved.
+      </div>
+
+      <!-- Scroll to Top -->
+      <button
+        id="scrollTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-yellow-300 text-black p-3 rounded-full shadow-lg hover:bg-yellow-400 transition z-50"
+      >
+        <i data-feather="arrow-up"></i>
+      </button>
+    </footer>
+
+    <script>
+      let prevScroll = window.scrollY;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > prevScroll && currentScroll > 50) {
+          // Scroll ke bawah, sembunyikan navbar
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          // Scroll ke atas, tampilkan navbar
+          navbar.style.transform = "translateY(0)";
+        }
+
+        prevScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

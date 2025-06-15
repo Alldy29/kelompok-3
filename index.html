@@ -8,112 +8,379 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--Flowbite Cdn CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-    
-     <!-- OWL CAROUSEL -->  
+    <!-- OWL Carousel -->
     <link rel="stylesheet" href="/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body class="font-sans text-gray-800">
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tambahkan ini di <head> -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+
+   
+
+  </head>
+
+  <body class="font-sans text-gray-800">
     <!-- Navbar -->
-   <header
-    class="flex fixed top-0 left-0 right-0 w-full h-20 bg-yellow-800 items-center pl-[30px] shadow z-40">
-    <div class="[500px] text-black hidden md:block">    
-      <div class="flex font-semibold space-x-1 "> 
-        <div class="text-yellow-400 ">BananaNa</div>
-        <div class="text-yellow-500 ">Pisang</div>
-        <div class="text-yellow-600 ">Crispy</div>
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm shadow-lg shadow-yellow-500/10 border-b-2 border-yellow-400 transition-all duration-500"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div
+          class="text-3xl font-bold tracking-tight text-white font-playfair whitespace-nowrap"
+        >
+          <a
+            href="index.html"
+            class="hover:text-yellow-300 transition-colors duration-300"
+            >Banana <span class="text-yellow-300">Crispy</span></a
+          >
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul
+          class="hidden md:flex absolute left-1/2 -translate-x-[45%] space-x-6 text-1xl font-semibold font-montserrat"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="text-white hover:text-yellow-300 transition"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a
+              href="tentangkami.html"
+              class="text-white hover:text-yellow-300 transition"
+              >Tentang Kami</a
+            >
+          </li>
+          <li>
+            <a
+              href="menu.html"
+              class="text-white hover:text-yellow-300 transition"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="text-white hover:text-yellow-300 transition"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+        <!-- Login & Register -->
+          <div class="hidden md:flex items-center space-x-3">
+          <a href="login.html" class="text-white hover:text-yellow-300 font-semibold transition">Login</a>
+          <a href="register.html" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-4 py-1 rounded transition">Register</a>
+          </div>
+
+
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+          <button class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      <p>Hallo, Selamat Berbelanja</p>
-    </div>
-    <div
-      class="font-size:50px flex justify-center items-center px-10 space-x-5 text-sm font-medium">
-        <a href="#home" class="hover:text-yellow-300 text-white">Beranda</a>
-        <a href="Kami.html" class="hover:text-yellow-300 text-white">Tentang Kami</a>
-        <a href="#menu" class="hover:text-yellow-300 text-white">Menu</a>
-        <a href="#contact" class="hover:text-yellow-300 text-white">Kontak</a>
-    </div>
-  </header>
-    <section id="home" class=" bg-true-gray-300 rounded-lg shadow-md w-100 bg-cover bg-center bg-[url(/img/BG_1.png)] justify-center pb-50 py-40">
-      <div class="pb-40">
-        <div class="max-w-2xl mx-auto text-center text-white px-4">
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative w-full bg-cover bg-bottom bg-[url(/img/BG_1.png)] h-[700px]"
+    >
+      <div
+        class="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 bg-white/10 backdrop-blur-md px-6 py-6 rounded-2xl shadow-lg max-w-xl text-center animate-fade-in"
+      >
+        <h1
+          class="text-4xl md:text-5xl font-playfair font-bold text-blue drop-shadow mb-6"
+        >
+          Selamat Datang di <br />
+          <span class="text-red-300">Banana Crispy</span>
+        </h1>
+        <div class="flex justify-center gap-4">
+          <a
+            href="menu.html"
+            class="px-6 py-2 bg-blue-300 text-black font-semibold rounded-full hover:bg-yellow-400 transition flex items-center gap-2 animate-slide-in-left"
+            >➤ Lihat Menu</a
+          >
+          <a
+            href="tentangkami.html"
+            class="px-6 py-2 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition flex items-center gap-2 animate-slide-in-right"
+            >ℹ️ Tentang Kami</a
+          >
         </div>
       </div>
     </section>
 
+  <!-- Produk Best Seller -->
+<section class="py-20 bg-gray-100 text-center">
+  <h2 class="font-serif text-3xl text-yellow-500 mb-6">Produk Best Seller</h2>
 
-    <section id="tentang Kami" id="scrolldiv" class="py-10 pb-10
-     text-center bg-true-gray-300 rounded-lg mt-[50px]  border shadow shadow-yellow-500 w-100" >
-    <section class=""><span class="font-serif text-3xl text-yellow-500">Produk Best Saller</span></section>
-    <div class="cursor-pointer flex overflow-y-auto h-[500] whitespace-nowrap px-5 scrollbar-hide scroll-smooth">
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png"/>
-            <span class="text-center">Pisang Keju</span>
-          </div>
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png" />
-            <span class="text-center">Pisang Keju </span>
-          </div>
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png"/>
-            <span class="text-center">Pisang Keju</span>
-          </div>
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png" />
-            <span class="text-center">Pisang Keju</span>
-          </div>
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png"  />
-            <span class="text-center">Pisang Keju</span>
-          </div>
-          <div class="w-full h-[200px] justify-center items-center">
-            <img src="/img/Panda.png"  />
-            <span class="text-center">Pisang Keju</span>
-          </div>
-    </div>
-    <div><a href="#" class="text-yellow-300 text-white pb-10">Masuk </a></div>
-      </section>
+  <div class="container mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+  
+  <!-- Produk 1 -->
+  <div data-aos="fade-up" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang coklat.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Coklat" />
+    <span class="mt-2 font-medium text-yellow-700">Banana Coklat</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Coklat"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
 
-      <div class="flex items-center justify-center p-5 ">
-          <div class="w-full h-[500px] flex ">
-            <img src="/img/Panda.png" style="width: 40%" />
-          </div>  
-      </div>
-    
-      <div class="justify-end">
-          <div class="w-full h-[500px] flex ">
-            <img src="/img/Panda.png" style="width: 40%" />
+  <!-- Produk 2 -->
+  <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang kacang matca.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Kacang Matcha" />
+    <span class="mt-2 font-medium text-yellow-700">Banana Kacang Matcha</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Kacang%20Matcha"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
+
+  <!-- Produk 3 -->
+  <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang cm.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Coklat Matcha" />
+    <span class="mt-2 font-medium text-yellow-700">Banana Coklat Matcha</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Coklat%20Matcha"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
+
+  <!-- Produk 4 -->
+  <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang matca.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Matcha" />
+    <span class="mt-2 font-medium text-yellow-700">Banana Matcha</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Matcha"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
+
+  <!-- Produk 5 -->
+  <div data-aos="fade-up" data-aos-delay="400" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang oreo.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Coklat Oreo" />
+    <span class="mt-2 font-medium text-yellow-700">Banana Coklat Oreo</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Coklat%20Oreo"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
+
+  <!-- Produk 6 -->
+  <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col items-center bg-white p-4 rounded shadow hover:shadow-md transition">
+    <img src="/img/pisang susu.jpg" class="w-32 h-auto rounded shadow transition-transform duration-300 transform hover:scale-110 active:scale-105" alt="Banana Crispy Susu" />
+    <span class="mt-2 font-medium text-yellow-700">Pisang Susu</span>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20memesan%20Pisang%20Susu"
+      target="_blank"
+      class="mt-2 bg-yellow-300 hover:bg-yellow-400 text-black text-sm font-semibold px-4 py-1 rounded">
+      Pesan Sekarang
+    </a>
+  </div>
+
+</div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-10 mt-20 relative">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-2xl font-playfair font-bold mb-2">
+            Banana <span class="text-yellow-300">Crispy</span>
+          </h2>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Camilan pisang renyah kekinian dengan topping melimpah dan rasa
+            tiada duanya.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Navigasi</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="index.html" class="hover:text-yellow-300">Beranda</a>
+            </li>
+            <li>
+              <a href="tentangkami.html" class="hover:text-yellow-300"
+                >Tentang Kami</a
+              >
+            </li>
+            <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+            <li>
+              <a href="kontak.html" class="hover:text-yellow-300">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Lokasi Toko</h3>
+          <div class="w-full h-32 rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.297761142335!2d108.19611007411291!3d-7.320411671983636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f572c5a8557fb%3A0x3e72866522bfece5!2sPoliteknik%20LP3I%20Kampus%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1749718594436!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
           </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="instagram"></i
+            ></a>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M232,64a72.1,72.1,0,0,1-48-18.4V144a72,72,0,1,1-72-72,8,8,0,0,1,0,16,56,56,0,1,0,56,56V24a8,8,0,0,1,8-8h16a8,8,0,0,1,8,8,56.1,56.1,0,0,0,56,56,8,8,0,0,1,0,16Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="message-circle"></i
+            ></a>
+          </div>
+        </div>
       </div>
-    
-    <!-- Feather Icons Init -->
-     <!-- {{-- Flowbite Cdn JS --}} -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
+
+      <!-- Newsletter -->
+      <div class="max-w-4xl mx-auto mt-12 px-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Berlangganan Newsletter</h3>
+        <p class="text-sm text-gray-400 mb-4">
+          Dapatkan info promo dan menu terbaru!
+        </p>
+        <form
+          class="flex flex-col sm:flex-row items-center justify-center gap-3"
+        >
+          <input
+            type="email"
+            placeholder="Email Anda"
+            class="px-4 py-2 w-full sm:w-80 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <button
+            type="submit"
+            class="bg-yellow-300 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-400 transition"
+          >
+            Kirim
+          </button>
+        </form>
+      </div>
+
+      <!-- Copyright & Scroll -->
+      <div
+        class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 Banana Crispy. All rights reserved.
+      </div>
+
+      <!-- Scroll to Top -->
+      <button
+        id="scrollTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-yellow-300 text-black p-3 rounded-full shadow-lg hover:bg-yellow-400 transition z-50"
+      >
+        <i data-feather="arrow-up"></i>
+      </button>
+    </footer>
+
+    <!-- Scripts -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-  <script>
-  const scrolldiv = document.getElementById ('scrolldiv');
+    <script>
+      feather.replace();
 
-  scrolldiv.addEventListener('wheel', (evt) => {
-    const isScrollingHorizontally = Math.abs(evt.deltaX) > Math.abs(evt.deltaY);
-    
-    if (isScrollingHorizontally || evt.shiftKey) {
-      evt.preventDefault();
-      scrolldiv.scrollBy({
-        left: evt.deltaX * 50, // ⬅️ Tambah kecepatan scroll horizontal
-        behavior: 'smooth'
+      // Navbar scroll behavior
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        navbar.style.transform =
+          scrollTop > lastScrollTop ? "translateY(-100%)" : "translateY(0)";
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
       });
-    }
-  }, { passive: false });
+
+      // Scroll to Top
+      const btn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        btn.classList.toggle("hidden", window.scrollY < 300);
+      });
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <!-- Tambahkan ini sebelum </body> -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
 </script>
+
 
   </body>
 </html>
+

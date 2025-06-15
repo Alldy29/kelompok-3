@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Banana Crispy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-yellow-300 min-h-screen flex items-center justify-center px-4">
+  <div class="backdrop-blur-md bg-white/30 border border-white/20 shadow-lg p-8 rounded-xl">
+
+<div class="bg-white rounded-xl shadow-xl p-8 w-full max-w-md fade-in">
+    <div class="text-center mb-6">
+      <h1 class="text-3xl font-bold text-yellow-500 mb-2">Daftar</h1>
+      <p class="text-gray-500 text-sm">Buat akun untuk mulai berbelanja Banana Crispy 🍌</p>
+    </div>
+    <form class="space-y-5">
+      <div>
+        <label class="block text-sm text-gray-700 mb-1">Nama Lengkap</label>
+        <div class="flex items-center border rounded px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-yellow-300">
+          <i data-feather="user" class="w-5 h-5 text-gray-400 mr-2"></i>
+          <input type="text" placeholder="Nama lengkap" class="w-full bg-transparent outline-none" required>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-700 mb-1">Email</label>
+        <div class="flex items-center border rounded px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-yellow-300">
+          <i data-feather="mail" class="w-5 h-5 text-gray-400 mr-2"></i>
+          <input type="email" placeholder="email@domain.com" class="w-full bg-transparent outline-none" required>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-700 mb-1">Password</label>
+        <div class="flex items-center border rounded px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-yellow-300">
+          <i data-feather="lock" class="w-5 h-5 text-gray-400 mr-2"></i>
+          <input type="password" placeholder="••••••••" class="w-full bg-transparent outline-none" required>
+        </div>
+      </div>
+      <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded transition">
+        Daftar
+      </button>
+    </form>
+    <p class="mt-6 text-sm text-center text-gray-600">
+      Sudah punya akun?
+      <a href="login.html" class="text-yellow-500 hover:underline">Login sekarang</a>
+    </p>
+  </div>
+
+  <script>feather.replace()</script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang Kami - Banana Crispy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <style>
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body
+    class="relative bg-cover bg-center min-h-screen"
+    style="background-image: url('/img/bg-banana.jpg')"
+  >
+    <!-- Navbar -->
+    <nav
+  id="navbar"
+  class="flex justify-between items-center px-5 py-4 bg-black shadow-md sticky top-0 z-50 transition-transform duration-300"
+>
+
+      <div class="text-3xl font-bold tracking-tight text-white font-playfair">
+        <a
+          href="index.html"
+          class="hover:text-yellow-300 transition-colors duration-300"
+        >
+          Banana <span class="text-yellow-300">Crispy</span>
+        </a>
+      </div>
+      <ul class="hidden md:flex space-x-6 text-white font-semibold">
+        <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
+        <li>
+          <a href="tentangkami.html" class="hover:text-yellow-300">Tentang</a>
+        </li>
+        <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+        <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Konten -->
+    <div
+      class="min-h-screen flex flex-col items-center px-4 py-10 bg-white bg-opacity-80 rounded-lg mx-4 md:mx-auto max-w-4xl shadow-lg"
+    >
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center text-yellow-700">
+        Tentang Banana Crispy
+      </h1>
+      <div class="w-16 h-1 bg-yellow-500 rounded-full mb-6"></div>
+
+      <div class="max-w-3xl space-y-6 text-gray-800">
+        <p class="text-lg leading-relaxed">
+          Banana Crispy adalah UMKM yang berdiri sejak 2023 di Tasikmalaya, Jawa
+          Barat. Kami menyajikan camilan pisang goreng crispy dengan berbagai
+          rasa kekinian yang digemari semua kalangan.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Kami percaya bahwa camilan lokal bisa tampil modern, higienis, dan
+          berkualitas. Dengan bahan-bahan pilihan dan pengolahan yang bersih,
+          Banana Crispy hadir sebagai pilihan camilan sehat dan lezat.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Saat ini, kami sudah melayani lebih dari 1000 pelanggan dan terus
+          berkembang dengan berbagai varian rasa seperti coklat, keju, matcha,
+          taro, dan lainnya.
+        </p>
+
+        <img
+          src="/img/poto tentangkami.jpg"
+          alt="Banana Crispy"
+          class="rounded-xl w-full shadow-md transform hover:scale-105 transition duration-300"
+        />
+
+        <!-- Info Kontak -->
+        <div class="text-center mt-6">
+          <h2 class="text-xl font-semibold mb-2 text-yellow-700">Hubungi Kami</h2>
+          <div class="mt-4 flex justify-center gap-10">
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                class="w-10 h-10"
+              />
+            </a>
+            <a
+              href="https://instagram.com/Banana_Crispy"
+              target="_blank"
+              aria-label="Instagram"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+                class="w-10 h-10 rounded-lg"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@your_username"
+              target="_blank"
+              aria-label="TikTok"
+              class="hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src="https://cdn.simpleicons.org/tiktok/000000"
+                alt="TikTok"
+                class="w-10 h-10"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-10 mt-20 relative">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-2xl font-playfair font-bold mb-2">
+            Banana <span class="text-yellow-300">Crispy</span>
+          </h2>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Camilan pisang renyah kekinian dengan topping melimpah dan rasa
+            tiada duanya.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Navigasi</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="index.html" class="hover:text-yellow-300">Beranda</a>
+            </li>
+            <li>
+              <a href="tentangkami.html" class="hover:text-yellow-300"
+                >Tentang Kami</a
+              >
+            </li>
+            <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+            <li>
+              <a href="kontak.html" class="hover:text-yellow-300">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Lokasi Toko</h3>
+          <div class="w-full h-32 rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.297761142335!2d108.19611007411291!3d-7.320411671983636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f572c5a8557fb%3A0x3e72866522bfece5!2sPoliteknik%20LP3I%20Kampus%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1749718594436!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="instagram"></i
+            ></a>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M232,64a72.1,72.1,0,0,1-48-18.4V144a72,72,0,1,1-72-72,8,8,0,0,1,0,16,56,56,0,1,0,56,56V24a8,8,0,0,1,8-8h16a8,8,0,0,1,8,8,56.1,56.1,0,0,0,56,56,8,8,0,0,1,0,16Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              class="text-gray-400 hover:text-yellow-300"
+              ><i data-feather="message-circle"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="max-w-4xl mx-auto mt-12 px-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Berlangganan Newsletter</h3>
+        <p class="text-sm text-gray-400 mb-4">
+          Dapatkan info promo dan menu terbaru!
+        </p>
+        <form
+          class="flex flex-col sm:flex-row items-center justify-center gap-3"
+        >
+          <input
+            type="email"
+            placeholder="Email Anda"
+            class="px-4 py-2 w-full sm:w-80 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <button
+            type="submit"
+            class="bg-yellow-300 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-400 transition"
+          >
+            Kirim
+          </button>
+        </form>
+      </div>
+
+      <!-- Copyright & Scroll -->
+      <div
+        class="mt-10 text-center text-sm text-gray-500 border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 Banana Crispy. All rights reserved.
+      </div>
+
+      <!-- Scroll to Top -->
+      <button
+        id="scrollTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-yellow-300 text-black p-3 rounded-full shadow-lg hover:bg-yellow-400 transition z-50"
+      >
+        <i data-feather="arrow-up"></i>
+      </button>
+    </footer>
+
+    <script>
+      let prevScroll = window.scrollY;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > prevScroll && currentScroll > 50) {
+          // Scroll ke bawah, sembunyikan navbar
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          // Scroll ke atas, tampilkan navbar
+          navbar.style.transform = "translateY(0)";
+        }
+
+        prevScroll = currentScroll;
+      });
+    </script>
