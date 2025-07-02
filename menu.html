@@ -13,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <style>
+  .zoom-press:active {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+</style>
 
     <style>
       .font-playfair {
@@ -77,146 +83,98 @@
       </p>
     </section>
 
-    <!-- Produk Section -->
-    <section id="menu" class="px-5 py-10 bg-yellow-100">
-      <h2 class="text-2xl font-bold text-center text-yellow-700 mb-6">
-        Menu Kami
-      </h2>
+  <!-- Produk Section -->
+<section id="menu" class="px-5 py-10 bg-yellow-100">
+  <h2 class="text-2xl font-bold text-center text-yellow-700 mb-6">Menu Kami</h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Produk 1 -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="/img/pisang susu.jpg"
-            alt="Banana Original"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Original</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Pisang goreng krispi dengan topping keju dan coklat.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Original"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
+    
+    <!-- Produk 1 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang susu.jpg" alt="Banana Original"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Original</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Pisang goreng krispi dengan topping keju dan coklat.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Original" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
 
-        <!-- Produk 2 -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Banana Coklat"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Coklat</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Kombinasi rasa pisang dan lelehan coklat yang nikmat.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
+    <!-- Produk 2 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang coklat.jpg" alt="Banana Coklat"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Coklat</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Kombinasi rasa pisang dan lelehan coklat yang nikmat.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
 
-        <!-- Produk 3 -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Banana Keju"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Keju</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Lezatnya keju meleleh di atas pisang krispi hangat.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Keju"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
+    <!-- Produk 3 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang keju.jpg" alt="Banana Keju"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Keju</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Lezatnya keju meleleh di atas pisang krispi hangat.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Keju" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
 
-        <!-- Produk 4: Banana Matcha -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Banana Matcha"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Matcha</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Sensasi unik perpaduan pisang krispi dan bubuk matcha.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Matcha"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
+    <!-- Produk 4 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang matcha.jpg" alt="Banana Matcha"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Matcha</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Sensasi unik perpaduan pisang krispi dan bubuk matcha.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Matcha" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
 
-        <!-- Produk 5: Banana Coklat Oreo -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Banana Coklat Oreo"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Coklat Oreo</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Lelehan coklat dan taburan Oreo yang menggoda selera.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat%20Oreo"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
+    <!-- Produk 5 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang oreo.jpg" alt="Banana Coklat Oreo"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Coklat Oreo</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Lelehan coklat dan taburan Oreo yang menggoda selera.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Coklat%20Oreo" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
 
-        <!-- Produk 6: (tambahan opsional jika ingin 6 rasa) -->
-        <div
-          class="bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-        >
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Banana Tiramisu"
-            class="rounded-lg mb-3"
-          />
-          <h3 class="text-xl font-semibold mb-1">Banana Tiramisu</h3>
-          <p class="text-sm text-gray-600 mb-2">
-            Paduan manis pisang dengan cita rasa kopi tiramisu.
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Tiramisu"
-            target="_blank"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center"
-          >
-            Pesan Sekarang
-          </a>
-        </div>
-      </div>
-    </section>
+    <!-- Produk 6 -->
+    <div class="bg-white w-80 rounded-xl shadow-lg p-4 flex flex-col items-center">
+      <img src="/img/pisang tiramisu.jpg" alt="Banana Tiramisu"
+        class="w-80 h-80 object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-105 active:scale-95" />
+      <h3 class="text-xl font-semibold mb-1 text-center">Banana Tiramisu</h3>
+      <p class="text-sm text-gray-600 mb-2 text-center">
+        Paduan manis pisang dengan cita rasa kopi tiramisu.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Banana%20Tiramisu" target="_blank"
+        class="mt-auto bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-center">
+        Pesan Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-black text-white pt-10 mt-20 relative">
